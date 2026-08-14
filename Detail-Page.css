@@ -1,0 +1,772 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    color: #111827;
+}
+
+
+/* =====================================
+   COMMON
+===================================== */
+
+.main-container,
+.hero-container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.heading-line {
+    width: 32px;
+    height: 3px;
+    background: #094DB9;
+    margin: 8px 0 25px;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.course-hero {
+    min-height: 430px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #061633,
+            #0a2555,
+            #071a3c
+        );
+
+    color: white;
+}
+
+.hero-container {
+    min-height: 430px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.hero-content {
+    width: 55%;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #cbd8ef;
+    margin-bottom: 30px;
+}
+
+.breadcrumb span {
+    margin: 0 10px;
+    color: #4c9cff;
+}
+
+.popular-badge {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    border: 1px solid #3287f5;
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    display: block;
+    color: #4c9cff;
+}
+
+.hero-content p {
+    max-width: 650px;
+
+    color: #dbe6f7;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+.course-info {
+    display: flex;
+    gap: 28px;
+
+    margin-top: 28px;
+
+    flex-wrap: wrap;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 13px;
+}
+
+.info-item span {
+    font-size: 19px;
+}
+
+
+/* =====================================
+   HERO TECHNOLOGIES
+===================================== */
+
+.hero-tech {
+    width: 43%;
+    height: 350px;
+
+    position: relative;
+}
+
+.tech {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    z-index: 3;
+
+    font-weight: bold;
+}
+
+.tech i {
+    font-size: 55px;
+}
+
+.tech span {
+    font-size: 13px;
+}
+
+.html-tech {
+    top: 45px;
+    left: 5px;
+
+    color: #ff641f;
+}
+
+.css-tech {
+    top: 5px;
+    left: 125px;
+
+    color: #3287e8;
+}
+
+.js-tech {
+    right: 25px;
+    top: 85px;
+
+    color: #f7df1e;
+}
+
+.js-tech i {
+    background: #f7df1e;
+    color: #111;
+
+    padding: 5px;
+}
+
+
+/* =====================================
+   LAPTOP
+===================================== */
+
+.laptop {
+    position: absolute;
+
+    width: 300px;
+    height: 190px;
+
+    left: 70px;
+    top: 110px;
+
+    z-index: 2;
+}
+
+.screen {
+    height: 165px;
+
+    background: #111827;
+
+    border: 7px solid #6b7d91;
+
+    border-radius: 10px 10px 4px 4px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, .4);
+}
+
+.laptop-base {
+    width: 360px;
+    height: 14px;
+
+    margin-left: -30px;
+
+    background: #8493a5;
+
+    border-radius: 0 0 20px 20px;
+}
+
+.code {
+    font-family: monospace;
+
+    font-size: 11px;
+
+    margin-bottom: 12px;
+}
+
+.blue {
+    color: #4c9cff;
+}
+
+.orange {
+    color: #ff914d;
+}
+
+.purple {
+    color: #c084fc;
+}
+
+.yellow {
+    color: #f5df63;
+}
+
+.green {
+    color: #5ee29a;
+}
+
+
+/* =====================================
+   COURSE SECTION
+===================================== */
+
+.course-section {
+    padding: 60px 0;
+}
+
+.course-layout {
+    display: grid;
+
+    grid-template-columns:
+        1fr 340px;
+
+    gap: 50px;
+}
+
+
+/* =====================================
+   COURSE CONTENT
+===================================== */
+
+.course-content > p {
+    color: #4b5563;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+.learn-heading {
+    margin-top: 45px;
+}
+
+
+/* =====================================
+   LEARNING CARDS
+===================================== */
+
+.learning-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.learn-card {
+    background: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 9px;
+
+    padding: 20px;
+
+    transition: .3s;
+}
+
+.learn-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(20, 74, 150, .12);
+}
+
+.learn-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #edf4ff;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+.learn-icon i {
+    font-size: 28px;
+}
+
+.learn-card h3 {
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+.learn-card p {
+    color: #6b7280;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   PRICE CARD
+===================================== */
+
+.price-card {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    height: max-content;
+
+    box-shadow:
+        0 8px 30px
+        rgba(15, 44, 91, .12);
+
+    position: sticky;
+    top: 20px;
+}
+
+.price-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.current-price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.old-price {
+    color: #9ca3af;
+
+    text-decoration: line-through;
+}
+
+.discount {
+    background: #1769e8;
+
+    color: white;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+/* DETAILS */
+
+.course-details {
+    border-top: 1px solid #edf0f5;
+    border-bottom: 1px solid #edf0f5;
+
+    padding: 18px 0;
+}
+
+.detail {
+    display: grid;
+
+    grid-template-columns:
+        20px 1fr auto;
+
+    gap: 7px;
+
+    margin-bottom: 15px;
+
+    font-size: 12px;
+}
+
+.detail:last-child {
+    margin-bottom: 0;
+}
+
+.detail > span:last-child {
+    color: #4b5563;
+}
+
+
+/* BUTTONS */
+
+.enroll-btn,
+.cart-btn {
+    width: 100%;
+
+    height: 44px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.enroll-btn {
+    margin-top: 20px;
+
+    border: none;
+
+    color: white;
+
+    background: #1769e8;
+}
+
+.enroll-btn:hover {
+    background: #0956c8;
+}
+
+.cart-btn {
+    margin-top: 10px;
+
+    background: white;
+
+    color: #1769e8;
+
+    border: 1px solid #1769e8;
+}
+
+
+/* =====================================
+   BOTTOM SECTION
+===================================== */
+
+.bottom-section {
+    display: grid;
+
+    grid-template-columns:
+        1.1fr 1fr;
+
+    gap: 55px;
+
+    margin-top: 65px;
+}
+
+
+/* =====================================
+   CURRICULUM
+===================================== */
+
+.module {
+    background: white;
+
+    border: 1px solid #e1e7ef;
+
+    padding: 17px 15px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 100px 20px;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 13px;
+}
+
+.module:first-of-type {
+    border-radius: 8px 8px 0 0;
+}
+
+.module:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.module span {
+    color: #6b7280;
+
+    font-size: 11px;
+}
+
+.module b {
+    font-size: 20px;
+
+    font-weight: normal;
+}
+
+
+/* =====================================
+   TECHNOLOGY GRID
+===================================== */
+
+.technology-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    background: white;
+
+    border: 1px solid #e1e7ef;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.technology {
+    height: 130px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    border-right: 1px solid #e5e9ef;
+}
+
+.technology i {
+    font-size: 40px;
+}
+
+.technology strong {
+    font-size: 13px;
+}
+
+.technology span {
+    color: #6b7280;
+
+    font-size: 11px;
+}
+
+
+/* =====================================
+   WHY EDUHUB
+===================================== */
+
+.why-heading {
+    margin-top: 35px;
+}
+
+.why-list {
+    list-style: none;
+
+    margin-top: 18px;
+}
+
+.why-list li {
+    font-size: 14px;
+
+    color: #374151;
+
+    margin-bottom: 13px;
+}
+
+
+/* =====================================
+   CTA
+===================================== */
+
+.bottom-cta {
+    margin-top: 60px;
+
+    padding: 25px 30px;
+
+    background:
+        linear-gradient(
+            110deg,
+            #061633,
+            #0b2e70
+        );
+
+    border-radius: 10px;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.cta-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #1769e8;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+}
+
+.cta-content {
+    flex: 1;
+}
+
+.cta-content h2 {
+    font-size: 19px;
+
+    margin-bottom: 5px;
+}
+
+.cta-content p {
+    color: #d4def1;
+
+    font-size: 13px;
+}
+
+.bottom-cta button {
+    background: white;
+
+    color: #111827;
+
+    border: none;
+
+    padding: 13px 25px;
+
+    border-radius: 7px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 1000px) {
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-tech {
+        display: none;
+    }
+
+    .course-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .price-card {
+        position: static;
+    }
+
+    .bottom-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .course-hero {
+        padding: 45px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .technology-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .module {
+        grid-template-columns:
+            1fr 80px 15px;
+    }
+
+    .bottom-cta {
+        flex-wrap: wrap;
+    }
+
+    .bottom-cta button {
+        width: 100%;
+    }
+}

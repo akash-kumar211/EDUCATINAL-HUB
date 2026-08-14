@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SQL Database Course | EduHub</title>
+    <link rel="icon" type="image/.png" href="./img/logo.png">
+
+    <!-- SAME DETAIL PAGE CSS -->
+    <link rel="stylesheet" href="Detail-Page.css">
+
+    <!-- Devicon -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body>
+
+    <!-- header -->
+
+   <header>
+    <nav>
+        <div class="nav-logo">THAKUR <span>EDUHUB</span></div>
+       <input type="checkbox" id="menu-toggle" class="menu-toggle">
+       <label for="menu-toggle" class="menu-icon" aria-label="Open navigation menu">
+            <span></span><span></span><span></span>
+       </label>
+       <div class="nav-link">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+       </div>    
+    </nav>
+   </header>
+
+
+<!-- =========================================
+     HERO SECTION
+========================================= -->
+
+<section class="course-hero">
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+           
+
+
+            <span class="popular-badge">
+                ⭐ Popular Course
+            </span>
+
+
+            <h1>
+                SQL Database
+                <span>Complete Course</span>
+            </h1>
+
+
+            <p>
+                Learn SQL from scratch and master databases, queries,
+                data management and database operations using MySQL.
+                Build a strong foundation for real-world applications.
+            </p>
+
+
+            <div class="course-info">
+
+                <div class="info-item">
+                    <span>📊</span>
+                    <strong>Beginner to Advanced</strong>
+                </div>
+
+                <div class="info-item">
+                    <span>◷</span>
+                    <strong>20+ Hours</strong>
+                </div>
+
+                <div class="info-item">
+                    <span>🎓</span>
+                    <strong>Certificate Included</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             TECHNOLOGY AREA
+        ====================================== -->
+
+        <div class="hero-tech">
+
+
+            <div class="tech html-tech">
+
+                <i class="devicon-mysql-plain"></i>
+
+                <span>MySQL</span>
+
+            </div>
+
+
+            <div class="tech css-tech">
+
+                <span style="font-size: 42px;">
+                    SQL
+                </span>
+
+                <span>Database</span>
+
+            </div>
+
+
+            <div class="tech js-tech">
+
+                <span style="font-size: 38px;">
+                    &lt;/&gt;
+                </span>
+
+                <span>Queries</span>
+
+            </div>
+
+
+            <!-- LAPTOP -->
+
+            <div class="laptop">
+
+                <div class="screen">
+
+                    <div class="code blue">
+                        SELECT * FROM students;
+                    </div>
+
+                    <div class="code orange">
+                        CREATE DATABASE EduHub;
+                    </div>
+
+                    <div class="code purple">
+                        INSERT INTO courses
+                    </div>
+
+                    <div class="code yellow">
+                        VALUES ('SQL');
+                    </div>
+
+                    <div class="code green">
+                        SELECT name, marks
+                    </div>
+
+                    <div class="code blue">
+                        FROM students;
+                    </div>
+
+                </div>
+
+
+                <div class="laptop-base"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     MAIN COURSE SECTION
+========================================= -->
+
+<section class="course-section">
+
+    <div class="main-container">
+
+
+        <div class="course-layout">
+
+
+            <!-- =================================
+                 LEFT CONTENT
+            ================================== -->
+
+            <div class="course-content">
+
+
+                <h2>
+                    Course Overview
+                </h2>
+
+                <div class="heading-line"></div>
+
+
+                <p>
+                    This SQL Database course is designed for beginners
+                    who want to learn how databases work and how to
+                    manage and manipulate data using SQL.
+                </p>
+
+
+                <p>
+                    You will learn database fundamentals, SQL commands,
+                    tables, relationships, filtering, sorting, joins,
+                    subqueries, functions and data manipulation.
+                </p>
+
+
+                <p>
+                    By the end of this course, you will be able to
+                    create databases, write powerful SQL queries,
+                    manage data and work confidently with MySQL.
+                </p>
+
+
+
+                <!-- =================================
+                     WHAT YOU WILL LEARN
+                ================================== -->
+
+                <h2 class="learn-heading">
+                    What You'll Learn
+                </h2>
+
+                <div class="heading-line"></div>
+
+
+                <div class="learning-grid">
+
+
+                    <!-- SQL BASICS -->
+
+                    <div class="learn-card">
+
+                        <div class="learn-icon html-icon">
+
+                            <i class="devicon-mysql-plain"></i>
+
+                        </div>
+
+
+                        <h3>
+                            SQL Basics
+                        </h3>
+
+
+                        <p>
+                            Learn SQL fundamentals, databases, tables,
+                            records, columns and basic queries.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- CRUD -->
+
+                    <div class="learn-card">
+
+                        <div class="learn-icon css-icon">
+
+                            <span style="font-size: 24px;">
+                                CRUD
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            CRUD Operations
+                        </h3>
+
+
+                        <p>
+                            Learn INSERT, SELECT, UPDATE and DELETE
+                            operations to manage database records.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- FILTERING -->
+
+                    <div class="learn-card">
+
+                        <div class="learn-icon js-icon">
+
+                            <span style="font-size: 25px;">
+                                🔎
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Filtering & Sorting
+                        </h3>
+
+
+                        <p>
+                            Learn WHERE, ORDER BY, GROUP BY, HAVING
+                            and other useful SQL clauses.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- JOINS -->
+
+                    <div class="learn-card">
+
+                        <div class="learn-icon responsive-icon">
+
+                            🔗
+
+                        </div>
+
+
+                        <h3>
+                            SQL Joins
+                        </h3>
+
+
+                        <p>
+                            Learn INNER JOIN, LEFT JOIN, RIGHT JOIN
+                            and combine data from multiple tables.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- FUNCTIONS -->
+
+                    <div class="learn-card">
+
+                        <div class="learn-icon project-icon">
+
+                            ƒ()
+
+                        </div>
+
+
+                        <h3>
+                            SQL Functions
+                        </h3>
+
+
+                        <p>
+                            Work with aggregate, string, date and
+                            mathematical functions in SQL.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- PROJECTS -->
+
+                    <div class="learn-card">
+
+                        <div class="learn-icon practice-icon">
+
+                            🚀
+
+                        </div>
+
+
+                        <h3>
+                            Database Projects
+                        </h3>
+
+
+                        <p>
+                            Build practical database projects and
+                            improve your SQL problem-solving skills.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 PRICE CARD
+            ================================== -->
+
+            <div class="price-card">
+
+
+                <div class="price-area">
+
+                    <span class="current-price">
+                        ₹499
+                    </span>
+
+
+                    <span class="old-price">
+                        ₹1999
+                    </span>
+
+
+                    <span class="discount">
+                        75% OFF
+                    </span>
+
+                </div>
+
+
+
+                <div class="course-details">
+
+
+                    <div class="detail">
+
+                        <span>◷</span>
+
+                        <strong>
+                            Duration
+                        </strong>
+
+                        <span>
+                            20+ Hours
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <span>📚</span>
+
+                        <strong>
+                            Lectures
+                        </strong>
+
+                        <span>
+                            80+
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <span>🚀</span>
+
+                        <strong>
+                            Projects
+                        </strong>
+
+                        <span>
+                            4 Projects
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <span>📊</span>
+
+                        <strong>
+                            Level
+                        </strong>
+
+                        <span>
+                            Beginner
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <span>🌐</span>
+
+                        <strong>
+                            Language
+                        </strong>
+
+                        <span>
+                            English
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <span>🎓</span>
+
+                        <strong>
+                            Certificate
+                        </strong>
+
+                        <span>
+                            Included
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="detail">
+
+                        <span>♾</span>
+
+                        <strong>
+                            Access
+                        </strong>
+
+                        <span>
+                            Lifetime
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <button class="enroll-btn">
+                    Enroll Now
+                </button>
+
+
+                <button class="cart-btn">
+                    🛒 Add to Cart
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =========================================
+             COURSE CURRICULUM
+        ========================================= -->
+
+        <div class="bottom-section">
+
+
+            <div class="curriculum">
+
+
+                <h2>
+                    Course Curriculum
+                </h2>
+
+                <div class="heading-line"></div>
+
+
+
+                <div class="module">
+
+                    <strong>
+                        Module 1: Introduction to Databases
+                    </strong>
+
+                    <span>
+                        8 Lectures
+                    </span>
+
+                    <b>
+                        +
+                    </b>
+
+                </div>
+
+
+
+                <div class="module">
+
+                    <strong>
+                        Module 2: SQL Basics
+                    </strong>
+
+                    <span>
+                        10 Lectures
+                    </span>
+
+                    <b>
+                        +
+                    </b>
+
+                </div>
+
+
+
+                <div class="module">
+
+                    <strong>
+                        Module 3: CREATE & ALTER Tables
+                    </strong>
+
+                    <span>
+                        8 Lectures
+                    </span>
+
+                    <b>
+                        +
+                    </b>
+
+                </div>
+
+
+
+                <div class="module">
+
+                    <strong>
+                        Module 4: SELECT & WHERE
+                    </strong>
+
+                    <span>
+                        10 Lectures
+                    </span>
+
+                    <b>
+                        +
+                    </b>
+
+                </div>
+
+
+
+                <div class="module">
+
+                    <strong>
+                        Module 5: INSERT, UPDATE & DELETE
+                    </strong>
+
+                    <span>
+                        10 Lectures
+                    </span>
+
+                    <b>
+                        +
+                    </b>
+
+                </div>
+
+
+
+                <div class="module">
+
+                    <strong>
+                        Module 6: GROUP BY, ORDER BY & Functions
+                    </strong>
+
+                    <span>
+                        10 Lectures
+                    </span>
+
+                    <b>
+                        +
+                    </b>
+
+                </div>
+
+
+
+                <div class="module">
+
+                    <strong>
+                        Module 7: SQL Joins & Subqueries
+                    </strong>
+
+                    <span>
+                        12 Lectures
+                    </span>
+
+                    <b>
+                        +
+                    </b>
+
+                </div>
+
+
+
+                <div class="module">
+
+                    <strong>
+                        Module 8: Database Projects
+                    </strong>
+
+                    <span>
+                        4 Projects
+                    </span>
+
+                    <b>
+                        +
+                    </b>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 TECHNOLOGIES
+            ================================== -->
+
+            <div class="technologies">
+
+
+                <h2>
+                    Technologies You'll Learn
+                </h2>
+
+                <div class="heading-line"></div>
+
+
+
+                <div class="technology-grid">
+
+
+                    <div class="technology">
+
+                        <i class="devicon-mysql-plain"></i>
+
+                        <strong>
+                            MySQL
+                        </strong>
+
+                        <span>
+                            Database
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="technology">
+
+                        <span style="font-size: 40px;">
+                            SQL
+                        </span>
+
+                        <strong>
+                            SQL
+                        </strong>
+
+                        <span>
+                            Queries
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="technology">
+
+                        <span style="font-size: 40px;">
+                            🗄️
+                        </span>
+
+                        <strong>
+                            Database
+                        </strong>
+
+                        <span>
+                            Management
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================
+                     WHY EDUHUB
+                ================================== -->
+
+                <h2 class="why-heading">
+                    Why Choose EduHub?
+                </h2>
+
+
+                <ul class="why-list">
+
+
+                    <li>
+                        ✓ Beginner-friendly SQL learning
+                    </li>
+
+
+                    <li>
+                        ✓ Practical SQL queries
+                    </li>
+
+
+                    <li>
+                        ✓ Learn MySQL database management
+                    </li>
+
+
+                    <li>
+                        ✓ Real-world database projects
+                    </li>
+
+
+                    <li>
+                        ✓ Lifetime course access
+                    </li>
+
+
+                    <li>
+                        ✓ Certificate of completion
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =========================================
+             CTA
+        ========================================= -->
+
+        <div class="bottom-cta">
+
+
+            <div class="cta-icon">
+                🗄️
+            </div>
+
+
+            <div class="cta-content">
+
+                <h2>
+                    Start Your SQL Database Journey Today!
+                </h2>
+
+                <p>
+                    Learn SQL, master databases and build your
+                    database management skills.
+                </p>
+
+            </div>
+
+
+            <button>
+                Enroll Now →
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+   <footer>
+    <div class="footer-section">
+        <div class="footer-upperside">
+            <div class="footer-box">
+                <div class="box-top">
+                    <div class="box-top-left">
+                        <img src="./img/footer cap.png" alt="">
+                    </div>
+                    <div class="box-top-right">
+                    <h1>Edu<span>Hub</span></h1>
+                    <p>Learn. Grow. Succeed.</p>
+                    </div>
+                </div>
+
+                <p>EduHub is an online learning platform <br>dedicated to providing high-quality <br>courses to help you learn new skills<br> and advance your career.</p>
+                <div class="social-media">
+                    <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>                  
+                    <a href="https://www.linkedin.com/feed/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>                    
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>                   
+                    <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"> <i class="fa-brands fa-youtube"></i></a>              
+                 </div>
+            </div>
+
+            <div class="quick-link">
+                <h1>Quick Links</h1>
+                <span><a href="index.html"><i class="fa-solid fa-greater-than"></i>Home</a></span>
+                <span><a href="course.html"><i class="fa-solid fa-greater-than"></i>Course</a></span>
+                <span><a href="about.html"><i class="fa-solid fa-greater-than"></i>About Us</a></span>
+                <span><a href="contact.html"><i class="fa-solid fa-greater-than"></i>Contact Us</a></span>
+                <span><a href="#"><i class="fa-solid fa-greater-than"></i>Blog</a></span>
+            </div>
+
+            <div class="quick-link">
+                <h1>Course</h1>
+                <span><a href="WebDetail.html"><i class="fa-solid fa-greater-than"></i>Web Development</a></span>
+                <span><a href="pythonDetail.html"><i class="fa-solid fa-greater-than"></i>Python Programming</a></span>
+                <span><a href="javaDetail.html"><i class="fa-solid fa-greater-than"></i>Java Programming</a></span>
+                <span><a href="SQLDetail.html"><i class="fa-solid fa-greater-than"></i>SQL Database</a></span>
+                <span><a href="C++Detail.html"><i class="fa-solid fa-greater-than"></i>C++ Programing</a></span>
+                <span><a href="AIDetail.html"><i class="fa-solid fa-greater-than"></i>AI Learning</a></span>
+                <span><a href="PHPDetail.html"><i class="fa-solid fa-greater-than"></i>PHP Learning</a></span>
+            </div>
+
+            <div class="quick-link">
+                <h1>Contact Us</h1>
+                <span><a href="#"><i class="fa-solid fa-location-dot"></i>Noide Sector 15, India</a></span>
+                <span><a href="#"><i class="fa-solid fa-phone"></i>+91 7717451467</a></span>
+                <span><a href="#"><i class="fa-solid fa-envelope"></i></i>ak3557620@gmail.com</a></span>
+            </div>
+        </div>
+
+        <div class="footer-lower">
+            <div class="footer-line">
+                <p>@2025 <a href="#">EduHUb</a>. All right reserved.</p>
+                <div class="right-para">
+                    <span>Privacy Policy</span>
+                    <span>Terms & Conditions</span>
+                    <span>Refund Policy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+   </footer>
+
+</body>
+</html>
